@@ -98,6 +98,12 @@ Select
 
 -- In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
-
+Select 
+	e.last_name, 
+	Count(last_name)
+		From employees as e
+			Group By last_name
+			Order By count(last_name)Desc
+;
 
 
