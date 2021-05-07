@@ -1,5 +1,6 @@
 DROP TABLE IF EXISTS employees, dept_emp, departments, dept_manager, titles, salaries CASCADE;
 
+
 CREATE TABLE titles (
     title_id varchar   NOT NULL,
     title varchar   NOT NULL,
